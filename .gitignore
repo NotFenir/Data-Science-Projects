@@ -1,3 +1,5 @@
 prv_*/
-.csv
-.venv
+*.csv
+*.venv
+*.xlsx
+*.arff
