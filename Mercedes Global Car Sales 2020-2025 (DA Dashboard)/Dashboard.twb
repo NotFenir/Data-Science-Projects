@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='mercedes_benz_sales_2020_2025' inline='true' name='federated.1bef7tj11827am1gg86jy0rc58bx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mercedes_benz_sales_2020_2025' name='textscan.1ppjw7j1wrdo0a14lhi3100vv2zx'>
+            <connection class='textscan' directory='C:/Users/mwisn/Documents/Repositories/Data Science projects/Mercedes Global Car Sales 2020-2025' filename='mercedes_benz_sales_2020_2025.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ppjw7j1wrdo0a14lhi3100vv2zx' name='mercedes_benz_sales_2020_2025.csv' table='[mercedes_benz_sales_2020_2025#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='string' name='Model' ordinal='0' />
+            <column datatype='string' name='Year' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='string' name='Color' ordinal='3' />
+            <column datatype='string' name='Fuel Type' ordinal='4' />
+            <column datatype='integer' name='Base Price (USD)' ordinal='5' />
+            <column datatype='integer' name='Horsepower' ordinal='6' />
+            <column datatype='integer' name='Sales Volume' ordinal='7' />
+            <column datatype='string' name='Turbo' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;zł&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pl_PL&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Color]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Color</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel Type]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Fuel Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Base Price (USD)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Base Price (USD)]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Base Price (USD)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Horsepower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Horsepower]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Horsepower</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales Volume]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Sales Volume</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Turbo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Turbo]</local-name>
+            <parent-name>[mercedes_benz_sales_2020_2025.csv]</parent-name>
+            <remote-alias>Turbo</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Count Models' datatype='integer' name='[Calculation_1950621626451963905]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Model])' />
+      </column>
+      <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+      <column caption='mercedes_benz_sales_2020_2025.csv' datatype='table' name='[__tableau_internal_object_id__].[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]' role='measure' type='quantitative' />
+      <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/mwisn/AppData/Local/Temp/TableauTemp/#TableauTemp_06livwz0syxone15x2dvk1l96n8d.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/11/2026 10:12:09 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Color]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Color</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fuel Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fuel Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fuel Type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Base Price (USD)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Base Price (USD)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Base Price (USD)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>790112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Horsepower</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Horsepower]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Horsepower</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>803</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales Volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sales Volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales Volume</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Turbo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Turbo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Turbo</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mercedes_benz_sales_2020_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Model:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;A-Class&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AMG C 63&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GLE&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;GLC&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CLS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AMG E 63&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;GLB&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AMG A 45&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CLA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;E-Class&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;GLS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;G-Class&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AMG GT&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;C-Class&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;GLA&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;S-Class&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AMG S 63&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='mercedes_benz_sales_2020_2025.csv' id='mercedes_benz_sales_2020_2025.csv_89FDBB1AD6C042A781BE17C3968D7D72'>
+            <properties context=''>
+              <relation connection='textscan.1ppjw7j1wrdo0a14lhi3100vv2zx' name='mercedes_benz_sales_2020_2025.csv' table='[mercedes_benz_sales_2020_2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+                  <column datatype='string' name='Model' ordinal='0' />
+                  <column datatype='string' name='Year' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='string' name='Color' ordinal='3' />
+                  <column datatype='string' name='Fuel Type' ordinal='4' />
+                  <column datatype='integer' name='Base Price (USD)' ordinal='5' />
+                  <column datatype='integer' name='Horsepower' ordinal='6' />
+                  <column datatype='integer' name='Sales Volume' ordinal='7' />
+                  <column datatype='string' name='Turbo' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Changes of solding type fuel car through years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Changes of solding type fuel car through years
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mercedes_benz_sales_2020_2025' name='federated.1bef7tj11827am1gg86jy0rc58bx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bef7tj11827am1gg86jy0rc58bx'>
+            <column datatype='string' name='[Fuel Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Fuel Type]' derivation='Count' name='[cnt:Fuel Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fuel Type]' derivation='None' name='[none:Fuel Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Year:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;2020&quot;</bucket>
+              <bucket>&quot;2021&quot;</bucket>
+              <bucket>&quot;2022&quot;</bucket>
+              <bucket>&quot;2023&quot;</bucket>
+              <bucket>&quot;2024&quot;</bucket>
+              <bucket>&quot;2025&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='auto-subtitle' class='0' field='[federated.1bef7tj11827am1gg86jy0rc58bx].[cnt:Fuel Type:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.1bef7tj11827am1gg86jy0rc58bx].[cnt:Fuel Type:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' field='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Fuel Type:nk]' value='16' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Fuel Type:nk]' value='16' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Fuel Type:nk]' />
+              <text column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Fuel Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bef7tj11827am1gg86jy0rc58bx].[cnt:Fuel Type:qk]</rows>
+        <cols>[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Year:nk]</cols>
+      </table>
+      <simple-id uuid='{03A62410-EF58-46A5-898D-9C0250DE1D2C}' />
+    </worksheet>
+    <worksheet name='Top 3 models above 500 HP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 3 models above 500 HP&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mercedes_benz_sales_2020_2025' name='federated.1bef7tj11827am1gg86jy0rc58bx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bef7tj11827am1gg86jy0rc58bx'>
+            <column caption='Count Models' datatype='integer' name='[Calculation_1950621626451963905]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Model])' />
+            </column>
+            <column datatype='integer' name='[Horsepower]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='Count' name='[cnt:Model:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Horsepower]' derivation='None' name='[none:Horsepower:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1950621626451963905]' derivation='User' name='[usr:Calculation_1950621626451963905:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Horsepower:qk]' context='true' included-values='in-range'>
+            <min>500</min>
+          </filter>
+          <filter class='categorical' column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]'>
+            <groupfilter count='3' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Model])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;AMG C 63&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;AMG E 63&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;AMG GT&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;AMG S 63&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;C-Class&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;CLS&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;E-Class&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;G-Class&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;GLC&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;GLE&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;GLS&quot;' />
+                  <groupfilter function='member' level='[none:Model:nk]' member='&quot;S-Class&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1bef7tj11827am1gg86jy0rc58bx].[usr:Calculation_1950621626451963905:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Horsepower:qk]</column>
+            <column>[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]</rows>
+        <cols>[federated.1bef7tj11827am1gg86jy0rc58bx].[cnt:Model:qk]</cols>
+      </table>
+      <simple-id uuid='{57791352-258F-470C-B188-C0314945C0A2}' />
+    </worksheet>
+    <worksheet name='Top 5 models for each year 2020-2025'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 5 models for each year 2020-2025
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mercedes_benz_sales_2020_2025' name='federated.1bef7tj11827am1gg86jy0rc58bx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bef7tj11827am1gg86jy0rc58bx'>
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='Count' name='[cnt:Model:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Model])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Model:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1bef7tj11827am1gg86jy0rc58bx].[cnt:Model:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1bef7tj11827am1gg86jy0rc58bx].[cnt:Model:qk]</rows>
+        <cols>([federated.1bef7tj11827am1gg86jy0rc58bx].[none:Year:nk] / [federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk])</cols>
+      </table>
+      <simple-id uuid='{B965215F-2079-49C1-889B-C61B6A9F8650}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Top 3 models above 500 HP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{800024B4-127D-4A3E-B4D3-9C26832E6D56}' />
+    </window>
+    <window class='worksheet' name='Top 5 models for each year 2020-2025'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Model:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32A77E04-3167-4510-B66A-4E439C1DEE9E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Changes of solding type fuel car through years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bef7tj11827am1gg86jy0rc58bx].[none:Fuel Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A849355A-0431-47B9-92EE-80DD93FF6399}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Changes of solding type fuel car through years' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
